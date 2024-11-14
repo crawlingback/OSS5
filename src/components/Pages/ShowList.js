@@ -11,28 +11,7 @@ function ShowList() {
                 <header className="container">
                     <div className="">
                         <Header />
-                        <Routes>
-                            <Route
-                                path={handler["home"]["link"]}
-                                element={handler["home"]["route"]}
-                            />
-                            <Route
-                                path={handler["edit"]["link"] + ":id"}
-                                element={handler["edit"]["route"]}
-                            />
-                            <Route
-                                path={handler["comment"]["link"] + ":id"}
-                                element={handler["comment"]["route"]}
-                            />
-                            <Route
-                                path={handler["create"]["link"]}
-                                element={handler["create"]["route"]}
-                            />
-                            <Route
-                                path={handler["list"]["link"]}
-                                element={handler["list"]["route"]}
-                            />
-                        </Routes>
+                        {handler["list"]["route"]}
                     </div>
                 </header>
             </div>
